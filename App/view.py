@@ -126,9 +126,11 @@ if __name__ == "__main__":
             tags = loadTags(control)
             print("Total de tags cargados: " + str(tags) + "\n")
 
-        elif int(inputs[0]) == 3:
-            # TODO: Mods de Est-3 en el Lab 2
-            pass
+        elif int(inputs[0]) == 3: 
+            # TODO: Mods de Est-3 en el Lab 2 
+            print("Cargando información de Book-Tags...") 
+            booktags = loadBooksTags(control) 
+            print("Total de Book-Tags cargados: " + str(booktags))
 
         elif int(inputs[0]) == 0:
             working = False
