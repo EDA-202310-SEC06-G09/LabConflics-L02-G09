@@ -78,7 +78,7 @@ def loadBooksTags(control):
     """
     # TODO: Mods de Est-1 en el Lab 2
     booktags = controller.loadBooksTags(control,
-                                        "GoodReads/book_tags-small.csv")
+    "GoodReads/book_tags-small.csv")
     return booktags
 
 
@@ -122,6 +122,10 @@ if __name__ == "__main__":
             # TODO: Mods de Est-1 en el Lab 2
             first = firstBook(control)
             print("Primer libro cargado:\n" + str(first) + "\n")
+<<<<<<< HEAD
+=======
+
+>>>>>>> est-1
 
             # TODO: Mods de Est-2 en el Lab 2
             last = lastBook(control)
