@@ -50,7 +50,7 @@ def printMenu():
     print("1- Cargar Libros")
     print("2- Cargar Tags")
     # TODO: Mods de Est-1 en el Lab 2, agregar opcion 3
-
+    print("3- Cargar Tags de Libros")
     print("0- Salir")
 
 
@@ -77,7 +77,9 @@ def loadBooksTags(control):
     Cargar los Tags de libros
     """
     # TODO: Mods de Est-1 en el Lab 2
-    pass
+    booktags = controller.loadBooksTags(control,
+                                        "GoodReads/book_tags-small.csv")
+    return booktags
 
 
 def firstBook(control):
@@ -85,7 +87,8 @@ def firstBook(control):
     Devuelve el primer libro del catalogo
     """
     # TODO: Mods de Est-1 en el Lab 2
-    pass
+    first = controller.firstBook(control)
+    return first
 
 
 def lastBook(control):
@@ -96,13 +99,6 @@ def lastBook(control):
     last = controller.lastBook(control)
     return last
 
-def lastBook(control):
-    # TODO: Mods de Est-2 en el Lab 2
-    """
-    Devuelve el último libro cargado
-    """
-    last = controller.lastBook(control)
-    return last
 
 # Se crea el controlador asociado a la vista
 control = newController()
@@ -124,7 +120,8 @@ if __name__ == "__main__":
             print("Total de libros cargados: " + str(books) + "\n")
 
             # TODO: Mods de Est-1 en el Lab 2
-            first = None
+            first = firstBook(control)
+            print("Primer libro cargado:\n" + str(first) + "\n")
 
             # TODO: Mods de Est-2 en el Lab 2
             last = lastBook(control)
