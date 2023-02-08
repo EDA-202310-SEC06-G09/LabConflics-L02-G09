@@ -70,14 +70,14 @@ def addBooks(catalog, booksfile):
     return catalog
 
 
-def addBookTags(catalog, booktagsfile): 
-    """ 
-    Esta función guardar los booktags provenientes del archivo CSV. 
-    """ 
-    # TODO: Mods de Est-1 y Est-2, Est-3 en el Lab 2 
-    bt = lt.newList(datastructure="SINGLE_LINKED", filename=booktagsfile) 
-    catalog["book_tags"] = bt 
-    return catalog 
+def addBookTags(catalog, booktagsfile):
+    """
+    Esta funcion guardar los booktags provenientes del archivo CSV.
+    """
+    # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
+    catalog["book_tags"] = lt.newList(datastructure="ARRAY_LIST",
+                                      filename=booktagsfile)
+    return catalog
 
 
 def addTag(catalog, tag):
@@ -99,22 +99,22 @@ def createTagList(catalog):
     return catalog
 
 
-def createBookTagList(catalog): 
-    """ 
-    Esta función crea una lista vacía para booktags. 
-    """ 
-    # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2 
-    catalog["book_tags"] = lt.newList(datastructure="ARRAY_LIST") 
-    return catalog 
+def createBookTagList(catalog):
+    """
+    Esta funcion crea una lista vacia para booktags.
+    """
+    # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
+    catalog["book_tags"] = lt.newList(datastructure="ARRAY_LIST")
+    return catalog
 
 
-def addBookTag(catalog, booktag): 
-    """ 
-    Esta función agrega un elemento a lista de booktags. 
-    """ 
-    # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2 
-    lt.addLast(catalog["book_tags"], booktag) 
-    return catalog 
+def addBookTag(catalog, booktag):
+    """
+    Esta funcion agrega un elemento a lista de booktags.
+    """
+    # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
+    lt.addLast(catalog["book_tags"], booktag)
+    return catalog
 
 
 # Funciones de consulta
