@@ -96,6 +96,13 @@ def lastBook(control):
     last = controller.lastBook(control)
     return last
 
+def lastBook(control):
+    # TODO: Mods de Est-2 en el Lab 2
+    """
+    Devuelve el último libro cargado
+    """
+    last = controller.lastBook(control)
+    return last
 
 # Se crea el controlador asociado a la vista
 control = newController()
